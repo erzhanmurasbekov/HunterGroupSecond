@@ -13,12 +13,12 @@ const Modal = ({ showModal, handleYes, handleNo }) => {
           <button
             onClick={handleNo}
             className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700">
-            No
+            Нет
           </button>
           <button
             onClick={handleYes}
             className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700">
-            Yes
+            Да
           </button>
         </div>
       </div>
