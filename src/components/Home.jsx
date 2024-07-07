@@ -12,8 +12,11 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[100vh] bg-cover bg-center" id="home">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${mountains})` }}></div>
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${mountains})`,
+            backgroundAttachment: "fixed",
+          }}></div>
         <div className="relative flex flex-col justify-center items-center h-full">
           <div className="flex flex-col items-center justify-center flex-grow">
             <img className="w-40 md:w-56" src={hunterLogo} alt="Hunter Logo" />
