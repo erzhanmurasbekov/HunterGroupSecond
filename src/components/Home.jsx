@@ -2,6 +2,7 @@ import React from "react";
 import hunterLogo from "../assets/hunterlogo.png";
 import whiteLogo from "../assets/logoWhite.jpg";
 import mountains from "../assets/mountains.jpg";
+import nature from '../assets/nature.jpg'
 import cloud1 from "../assets/cloud1.png";
 import cloud2 from "../assets/cloud2.png";
 import transition from "../../transition";
@@ -13,7 +14,7 @@ const Home = () => {
       <div className="relative w-full h-[100vh]">
         {/* Mountains image with fixed background */}
         <img
-          src={mountains}
+          src={nature}
           alt="Mountains"
           className="fixed inset-0 w-[105%] h-full object-cover object-center z-0"
           style={{
