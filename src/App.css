@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "flowbite/dist/flowbite.min.css";
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.background {
+  background-image: url(../src/assets/nature.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Ensure the element can contain absolutely positioned elements */
+  z-index: 0;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.cloud {
+  position: absolute;
+  right: 40%;
+  opacity: 0.5;
+}
+
+.cloud1, .cloud1-duplicate {
+  animation: moveClouds 30s linear infinite;
+  top: 4%;
+  height: 10vw; /* Adjust the height as needed */
+  width: 50vw; /* Adjust the width as needed */
+}
+
+.cloud2, .cloud2-duplicate {
+  animation: moveClouds 50s linear infinite;
+  top: 5%;
+  height: 15vw; /* Adjust the height as needed */
+  width: 55vw; /* Adjust the width as needed */
+}
+
+.cloud3, .cloud3-duplicate {
+  animation: moveClouds 40s linear infinite;
+  top: 0%;
+  height: 12vw; /* Adjust the height as needed */
+  width: 40vw; /* Adjust the width as needed */
+}
+
+.cloud4, .cloud4-duplicate {
+  animation: moveClouds 60s linear infinite;
+  top: 0;
+  height: 18vw; /* Adjust the height as needed */
+  width: 50vw; /* Adjust the width as needed */
+}
+
+
+
+
+
+
+header {
+  z-index: 1000 !important;
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00463e;
+  transform-origin: bot;
+}
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #00463e;
+  transform-origin: top;
+}
