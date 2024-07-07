@@ -6,7 +6,7 @@ import AgeModal from "../components/Modal";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  
   const [showScrollButton, setShowScrollButton] = useState(false);
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(true);
@@ -23,10 +23,10 @@ const Navbar = () => {
     }
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setIsSticky(true);
+        
         setShowScrollButton(true);
       } else {
-        setIsSticky(false);
+        
         setShowScrollButton(false);
       }
     };
@@ -69,11 +69,7 @@ const Navbar = () => {
     <>
       <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 z-50">
         <nav
-          className={`py-4 lg:px-14 px-4 sticky top-0 left-0 right-0 border-b bg-white duration-300${
-            isSticky
-              ? "sticky top-0 left-0 right-0 border-b bg-white duration-300"
-              : ""
-          }`}>
+          className={`py-4 lg:px-14 px-4 sticky top-0 left-0 right-0 border-b bg-white duration-300$`}>
           <div className="flex justify-between items-center text-base gap-8">
             <Linker
               to="/"
