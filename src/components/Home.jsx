@@ -18,7 +18,6 @@ const Home = () => {
           alt="Mountains"
           className="fixed inset-0 w-[105%] h-full object-cover object-center z-0"
           style={{
-            
             backfaceVisibility: "hidden",
             zIndex: "-1",
           }}
@@ -34,16 +33,17 @@ const Home = () => {
         <div className="w-full md:w-1/2 py-16 md:py-72 px-8 md:px-28 flex flex-col justify-center bg-white">
           <h1 className="text-3xl font-bold mb-4">О компании</h1>
           <p className="text-lg">
-            Компания Hunter Group является одним из крупнейших производителей
-            алкогольных напитков в Кыргызстане. Она занимает ведущие позиции на
-            рынке благодаря высокому качеству своей продукции и долголетнему
-            опыту. Заводы Hunter Group оснащены современным оборудованием для
-            производства напитков, что обеспечивает стабильное качество
-            продукции.
+            Компания Hunter Group является одним из ведущих поставщиков
+            алкогольной продукции в Кыргызстане. Мы занимаем лидирующие позиции
+            на рынке благодаря высокому качеству предлагаемой продукции и
+            многолетнему опыту. Мы тщательно контролируем каждый этап логистической
+            цепочки, чтобы гарантировать своевременные поставки и безупречное
+            состояние продукции. Наша цель - удовлетворить высокие ожидания
+            клиентов и обеспечить доступ к лучшим алкогольным напиткам.
           </p>
         </div>
         <div
-          className="w-full  md:w-1/2 bg-cover bg-center h-64 md:h-auto"
+          className="w-full z-0 md:w-1/2 bg-cover bg-center h-64 md:h-auto"
           style={{ backgroundImage: `url(${whiteLogo})` }}></div>
       </section>
 

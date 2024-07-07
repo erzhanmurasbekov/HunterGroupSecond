@@ -7,7 +7,7 @@ const transition = (OgComponent) => {
     <>
       <OgComponent />
       <motion.div
-        className="slide-in flex items-center justify-center h-[100%] "
+        className="slide-in z-10 flex items-center justify-center h-[100%] "
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
@@ -16,7 +16,7 @@ const transition = (OgComponent) => {
       </motion.div>
 
       <motion.div
-        className="slide-out flex items-center justify-center h-[100%] "
+        className="slide-out z-10 flex items-center justify-center h-[100%] "
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 0 }}
