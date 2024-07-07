@@ -8,17 +8,16 @@ import transition from "../../transition";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Hero Section */}
       <div className="relative w-full h-[100vh]">
         {/* Mountains image with fixed background */}
         <img
           src={mountains}
           alt="Mountains"
-          className="fixed inset-0 w-full h-full object-cover object-center z-0"
+          className="fixed inset-0 w-[105%] h-full object-cover object-center z-0"
           style={{
-            transform: "translate3d(-16.1px, 3.8px, 0px)",
-            transformStyle: "preserve-3d",
+            
             backfaceVisibility: "hidden",
             zIndex: "-1",
           }}
