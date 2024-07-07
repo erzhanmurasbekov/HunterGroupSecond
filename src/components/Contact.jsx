@@ -47,6 +47,7 @@ const Contact = () => {
                 Напишите Нам
               </h1>
               <form
+                netlify
                 method="post"
                 className="flex-1 flex flex-col gap-4 md:gap-6 w-full mx-auto border-gray-600"
                 onSubmit={handleSubmit}>
