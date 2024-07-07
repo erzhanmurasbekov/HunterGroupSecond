@@ -10,23 +10,28 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative w-full h-[100vh] bg-cover bg-center" id="home">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
+      <div className="relative w-full h-[100vh]">
+        {/* Mountains image with fixed background */}
+        <img
+          src={mountains}
+          alt="Mountains"
+          className="fixed inset-0 w-full h-full object-cover object-center z-0"
           style={{
-            backgroundImage: `url(${mountains})`,
-            backgroundAttachment: "fixed",
-          }}></div>
-        <div className="relative flex flex-col justify-center items-center h-full">
-          <div className="flex flex-col items-center justify-center flex-grow">
-            <img className="w-40 md:w-56" src={hunterLogo} alt="Hunter Logo" />
-          </div>
+            transform: "translate3d(-16.1px, 3.8px, 0px)",
+            transformStyle: "preserve-3d",
+            backfaceVisibility: "hidden",
+            zIndex: "-1",
+          }}
+        />
+        {/* Content over the background */}
+        <div className="relative flex items-center justify-center h-full z-10">
+          <img className="w-40 md:w-56" src={hunterLogo} alt="Hunter Logo" />
         </div>
       </div>
 
       {/* Company Overview Section */}
       <section className="w-full flex flex-col md:flex-row">
-        <div className="w-full md:w-1/2 py-16 md:py-72 px-8 md:px-28 flex flex-col justify-center">
+        <div className="w-full md:w-1/2 py-16 md:py-72 px-8 md:px-28 flex flex-col justify-center bg-white">
           <h1 className="text-3xl font-bold mb-4">О компании</h1>
           <p className="text-lg">
             Компания Hunter Group является одним из крупнейших производителей
@@ -61,7 +66,7 @@ const Home = () => {
       </section>
 
       {/* Product Quality Section */}
-      <section className="w-full p-4">
+      <section className="w-full p-4 bg-white">
         <div className="text-center py-12 md:py-28 px-4 md:px-20 w-full md:w-3/5 mx-auto">
           <h1 className="text-3xl font-bold mb-4">Секрет вкуса</h1>
           <p className="text-lg">
