@@ -12,7 +12,7 @@ const Home = () => {
       {/* Hero Section */}
       <div className="relative w-full h-[100vh] bg-cover bg-center" id="home">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{ backgroundImage: `url(${mountains})` }}></div>
         <div className="relative flex flex-col justify-center items-center h-full">
           <div className="flex flex-col items-center justify-center flex-grow">
