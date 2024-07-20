@@ -1,6 +1,5 @@
 import React from "react";
 import hunterlogo from "../assets/hunterlogo.png";
-import { FaCalendarAlt, FaStore } from "react-icons/fa";
 import MyFooter from "../components/MyFooter";
 import transition from "../../transition";
 
@@ -8,35 +7,39 @@ const PrivacyPolicy = () => {
   return (
     <div className="container mx-auto px-4 mt-24 xl:">
       <header className="py-8 text-center">
-        <h1 className="text-2xl font-bold">Privacy Policy</h1>
+        <h1 className="text-2xl font-bold">Политика конфиденциальности</h1>
       </header>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Introduction</h2>
+        <h2 className="text-xl font-semibold mb-4">Введение</h2>
         <p className="text-neutralGrey mb-6">
-          Компания ОсОО «Столичный Винно-Водочный завод» является частью
-          компаний «Холдинг Сманов», расположенной по адресу Профсоюзная 114/2,
-          Бишкек, Кыргызская Республика, далее – «СВВЗ». Мы благодарим Вас за
-          посещение svvz.kg (далее - Сайт). Далее приведены наши положения о
-          конфиденциальности, которые регулируют использование нами информации о
-          Вас, которую мы собираем (далее – Информация).
+          Компания Hunter Group (далее "Компания") придает большое значение
+          защите персональных данных и соблюдению законодательства в области
+          конфиденциальности. Настоящая Политика конфиденциальности (далее
+          "Политика") описывает, какие данные мы собираем, как мы их используем
+          и защищаем.
         </p>
       </section>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Information Collection</h2>
+        <h2 className="text-xl font-semibold mb-4">
+          Сбор и использование данных
+        </h2>
         <p className="text-neutralGrey mb-6">
-          СВВЗ собирает информацию о Вас при взаимодействии с Сайтом, включая,
-          но не ограничиваясь:
+          Мы можем собирать следующую личную информацию:
         </p>
         <ul className="list-disc list-inside mb-6 text-neutralGrey">
-          <li>Персональные данные, предоставленные Вами при регистрации</li>
+          <li>
+            Имя, фамилия Контактная информация, включая адрес электронной почты
+            и номер телефона
+          </li>
           <li>Данные об использовании Сайта (куки, IP-адрес и т.д.)</li>
+          <li>Информация о покупках и предпочтениях</li>
         </ul>
       </section>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Use of Information</h2>
+        <h2 className="text-xl font-semibold mb-4">Использование данных</h2>
         <p className="text-neutralGrey mb-6">
           Информация, которую мы собираем, используется для следующих целей:
         </p>
@@ -48,7 +51,9 @@ const PrivacyPolicy = () => {
       </section>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Sharing of Information</h2>
+        <h2 className="text-xl font-semibold mb-4">
+          Передача данных третьим лицам
+        </h2>
         <p className="text-neutralGrey mb-6">
           Мы можем делиться Вашей информацией с третьими лицами в следующих
           случаях:
@@ -61,7 +66,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">Security</h2>
+        <h2 className="text-xl font-semibold mb-4">Безопасность данных</h2>
         <p className="text-neutralGrey mb-6">
           Мы предпринимаем разумные меры для защиты Вашей информации от
           несанкционированного доступа, использования или раскрытия.
@@ -69,21 +74,13 @@ const PrivacyPolicy = () => {
       </section>
 
       <section className="my-12">
-        <h2 className="text-xl font-semibold mb-4">
-          Changes to Privacy Policy
-        </h2>
+        <h2 className="text-xl font-semibold mb-4">Изменения в Политике</h2>
         <p className="text-neutralGrey mb-6">
-          СВВЗ оставляет за собой право по своему усмотрению в любое время
-          изменять, корректировать, добавлять или удалять части настоящих
-          Положений о Конфиденциальности. Просим Вас периодически проверять
-          наличие изменений, которые мы могли внести в Положения о
-          Конфиденциальности. Продолжение использования Вами настоящего Сайта
-          после внесения изменений в Правила и Условия Использования, будет
-          означать Ваше согласие с такими изменениями.
+          Компания оставляет за собой право вносить изменения в настоящую
+          Политику. Все изменения будут опубликованы на этой странице и вступают
+          в силу с момента публикации.
         </p>
       </section>
-
-      <footer className="py-8"></footer>
     </div>
   );
 };

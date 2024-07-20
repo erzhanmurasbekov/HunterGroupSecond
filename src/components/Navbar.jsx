@@ -17,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     handleScrollToTop();
-    const isOldEnough = localStorage.getItem("isOldEnough");
+    const isOldEnough = sessionStorage.getItem("isOldEnough");
     if (isOldEnough === "true") {
       setShowModal(false);
     }
@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   const handleYes = () => {
-    localStorage.setItem("isOldEnough", "true");
+    sessionStorage.setItem("isOldEnough", "true");
     setShowModal(false);
   };
 
